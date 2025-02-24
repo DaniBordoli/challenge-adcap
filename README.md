@@ -4,7 +4,8 @@
 
 ### Instalar las dependencias
 ```sh
-npm i && npm install styled-components @types/styled-components --legacy-peer-deps
+npm i
+npm i styled-components @types/styled-components --legacy-peer-deps
 ```
 
 ### Instalar EAS (expo notifications)
