@@ -1,10 +1,10 @@
-# Notification Push
+# Challenge Adcap
 
 ## Instrucciones
 
 ### Instalar las dependencias
 ```sh
-npm i
+npm i && npm install styled-components @types/styled-components --legacy-peer-deps
 ```
 
 ### Instalar EAS (expo notifications)
@@ -20,4 +20,9 @@ eas login
 ### Configurar la build
 ```sh
 eas build:configure
+```
+
+### Levantar proyecto
+```sh
+npm start
 ```
