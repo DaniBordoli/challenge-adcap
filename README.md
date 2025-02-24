@@ -21,9 +21,16 @@ eas login
 ### Configurar la build
 ```sh
 eas build:configure
+si da error de build indicando que no hay permisos, borrar archivo eas.json y projectId dentro de app.json
 ```
 
 ### Levantar proyecto
 ```sh
 npm start
 ```
+
+### package json
+```sh
+node v20.15.0
+```sh
+expo v52.0.37
