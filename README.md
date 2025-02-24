@@ -32,5 +32,4 @@ npm start
 ### package json
 ```sh
 node v20.15.0
-```sh
 expo v52.0.37
