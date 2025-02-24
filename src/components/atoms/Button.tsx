@@ -1,5 +1,12 @@
-import React from 'react';
-import styled from 'styled-components/native';
+import React, { FC } from "react";
+import styled from "styled-components/native";
+
+interface ButtonProps {
+  onPress: () => void;
+  title: string;
+  style?: Record<string, unknown>;
+  textStyle?: Record<string, unknown>;
+}
 
 const StyledButton = styled.TouchableOpacity`
   padding: 10px;
@@ -15,10 +22,10 @@ const StyledText = styled.Text`
   text-align: center;
 `;
 
-const Button = ({ onPress, title, style, textStyle }: any) => (
+const Button: FC<ButtonProps> = ({ onPress, title, style, textStyle }) => (
   <StyledButton onPress={onPress} style={style}>
     <StyledText style={textStyle}>{title}</StyledText>
   </StyledButton>
 );
 
-export default Button;
+export default React.memo(Button);
